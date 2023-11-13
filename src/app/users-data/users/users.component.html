@@ -1,0 +1,20 @@
+<p>users works!</p>
+<!-- <div>
+    <button (click)="OnHomeClick()">go to home</button>
+</div> -->
+
+<ul>
+    <li>
+        <!-- here before path we need not to give / ie., /shipper-list
+         bec / means it go for home and check for home/shipper-list means path not matched.        -->
+        <a routerLink="shipper-list">Shippers</a>
+    </li>
+    <li>
+        <a routerLink="carrier-list">Carriers</a>
+    </li>
+    <li>
+        <a routerLink="1/bobby">Users</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>

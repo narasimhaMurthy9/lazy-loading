@@ -1,0 +1,11 @@
+<p>details of user {{user.name}}</p>
+<p>{{user.id}}</p>
+<div>
+    <!-- fragmnet accept string only  -->
+    <a 
+    [routerLink]="['/user',2,'bobby']"
+    [queryParams]="{page:1, search:'king'}"
+    [fragment]="'load'" 
+    >go details of bobby</a>
+</div>
+
